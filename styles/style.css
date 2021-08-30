@@ -302,7 +302,7 @@ code, pre {
     top:69px;
     height: 369px;
     width:400px;
-    padding:42px;
+    padding:22px 40px 40px 40px;
     z-index: 100;   /* ensures it is on top */
     animation:slideInFromRight 1000ms ease-in;
 }
@@ -528,9 +528,13 @@ code, pre {
     }
     .navbar .flex {
         flex-direction: column;
+        overflow-x: hidden; /* fix form overflowing on small screens */
     }
     .navbar ul {
         padding:10px;
         background-color:rgba(0,0,0,0.1);
+    }
+    .showcase-form {
+        width:365px;    /* fix form overflowing on small screens */
     }
 }
